@@ -40,7 +40,7 @@ module.exports = (env) => {
         filename: "remoteEntry.js",
         exposes: { "./ProductApp": "./src/App.jsx" },
         remotes: {
-          host_app: "host_app@http://localhost:3000/remoteEntry.js",
+          host_app: "host_app@https://shell-app-psi.vercel.app/remoteEntry.js",
         },
         shared: {
           react: { singleton: true, eager: true, requiredVersion: '^18.0.0' },
